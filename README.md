@@ -30,6 +30,7 @@ On application of a digitalfilter is an envelope detector. An envelope detector 
 takes a (relatively) high-frequency amplitude modulated signal as input and provides an
 output, which is the demodulated envelope of the original signal.
 ![image](https://github.com/user-attachments/assets/7df85b30-51ed-494a-98c3-85b9ac2d278f)
+
 Figure 1: Envelope Example
 
 The yellow line is the original signal, and the blue line is its envelope. An example application
@@ -47,11 +48,18 @@ be achieved by adding a decimation filter. In our case we only take every 15 sam
 needs a low pass filter in front of it to remove aliasing.
 
 ![image](https://github.com/user-attachments/assets/f0948dcf-d5df-4bf0-9af3-364b27c525f9)
+
 Figure 2: Model
 
 In Simulink, create a 1 kHz sine-wave and pulse generator that produces a 50/50 duty square
 wave. Multiply both signals together to make a signal like that in Figure 1.
 
 ![image](https://github.com/user-attachments/assets/69e60d4b-dec5-4233-80e8-d94275c5a141)
+
 Figure 3: Sine wave and pulse generator output
 
+Show this working in Similink only, then transfer to the DSP board and turn on the LED when
+the signal is greater than 0.25.
+• Note, to decimate by a factor of 15, the sample frame size of the data must be a multiple
+of 15.
+• The low pass filter has a cut-o frequency of Nyquist frequency/M where M is downsampling ratio (ie 15)
