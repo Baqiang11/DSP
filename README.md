@@ -1,4 +1,6 @@
 Project Brief
+
+
 1 Filtering
 An audio signal has been corrupted with a sine wave and high frequency noise. This can be
 downloaded from canvas.
