@@ -13,7 +13,7 @@ sine wave is,
 in of the DSP board. You need to ensure that the volume level is not too high so
 that the board does not clip the signal.
 – Measure the magnitude frequency performance of the filters running on the board
-using at least two dierent methods. Comment on the differences.
+using at least two different methods. Comment on the differences.
 – Marks are given for selecting and justify methods that will minimise the impact
 of the filter on the original sound (by amplitude and phase) as well as running as
 efficiently as possible on the board.
@@ -62,4 +62,4 @@ Show this working in Similink only, then transfer to the DSP board and turn on t
 the signal is greater than 0.25.
 • Note, to decimate by a factor of 15, the sample frame size of the data must be a multiple
 of 15.
-• The low pass filter has a cut-o frequency of Nyquist frequency/M where M is downsampling ratio (ie 15)
+• The low pass filter has a cut-off frequency of Nyquist frequency/M where M is downsampling ratio (ie 15)
